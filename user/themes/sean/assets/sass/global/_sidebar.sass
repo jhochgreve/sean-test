@@ -85,6 +85,8 @@
     float: left
     clear: both
     overflow-y: auto
+    background-color: #fff
+    box-shadow: 3px 0px 5px 0px rgba(1,0,77,0.27)
     +clearfix
     position: fixed
     z-index: 9999
@@ -92,21 +94,22 @@
       +fill-parent
       text-align: center
       display: block
+      background-color: $main-blue
       img
-        width: 95%
+        width: 90%
     #mobile_logo
       display: none
     #mobile_menu_button
       display: none
     .sidebar_content
-      +margin(10vh null null 28px)
+      +margin(7vh null null 28px)
       padding-right: 7%
       padding-left: 8%
       text-transform: uppercase
       text-align: left
       height: auto
       .sidebar_nav
-        color: #fff
+        color: $main-blue
         font-size: em(16)
         font-weight: 400
         ul:first-child.menu_out
@@ -120,7 +123,7 @@
             position: relative
             a
               text-decoration: none
-              color: #fff
+              color: $main-blue
               padding-left: 0
             .sub-menu
               font-size: em(13)
@@ -144,7 +147,7 @@
             bottom: 0
             min-width: 27px
             height: 1px
-            background-color: #fff
+            background-color: $main-blue
         &:nth-child(5)
           padding-top: 20.25px
         &:nth-child(n+5)
@@ -165,7 +168,7 @@
     .sidebar_social
       width: 100%
       position: relative
-      bottom: -25vh
+      bottom: 5px
       padding-left: 21%
       display: block
       &:last-child

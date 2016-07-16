@@ -1,0 +1,74 @@
+//-- colors:start --//
+$color-black: #000000
+$greyscale-lt: #F7F7F7
+$main-blue: #010039
+$greyscale-dk: #D8D8D8
+$greyscale-hover: #828282
+$greyscale-blk: #474747
+$form-placeholder: #e2e2e2
+$text-grey: #949494
+//-- colors:end --//
+//-- typo:start --//
+$font-proxima: 'Neue Helvetica W01', helvetica, sans-serif
+$font-proxima-alternative: 'Neue Helvetica W01', helvetica, sans-serif
+$font-newsgothic: 'Neue Helvetica W01', helvetica, sans-serif
+$font-new-York: 'Chalet New York'
+$font-NY8: 'Chalet NY8'; // 300, 500, 700
+$font-georgia: 'Georgia', Times, Times New Roman, serif
+$font-London-Sixty: 'Chalet London'
+$font-Paris-Sixty: 'Chalet Paris'
+$font-Inconsolata: 'Inconsolata'
+$font-Gibson: 'Gibson Semi'
+//-- typo:end --//
+//mixins
+///////////
+//main right container for all pages
+=main_container
+    +fill-parent
+    min-height: 100vh
+    margin: 61px 0 0
+    +media($md-768)
+        padding-left: 240px
+        margin-top: 0
+
+//dark overlay
+=dark_overlay
+    position: absolute
+    z-index: 500
+    background-color: rgba(49, 49, 55, 0.3)
+    width: 100%
+    height: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    margin: auto
+=lite_overlay
+    position: absolute
+    z-index: 500
+    background-color: rgba(238, 238, 242, 0.2)
+    width: 100%
+    height: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    margin: auto
+
+//keeps text on top of overlay
+=text_on_top
+    position: absolute
+    width: auto
+    display: block
+    z-index: 1000
+
+//button mixins
+//////////////////
+//Large CTA Button
+=lg_button
+    @extend .button
+    font-size: em(13)
+    text-transform: uppercase
+    font-family: $font-Gibson
+    letter-spacing: 1px
+    +padding(18px 70px 18px 70px)
