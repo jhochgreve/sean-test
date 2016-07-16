@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1468688348,
-    'checksum' => '5d2d5daaacbee425df44d2c5c0f441a6',
+    'timestamp' => 1468693558,
+    'checksum' => '25371c26b770d036dc4151f52de291e2',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1468376193
+            ],
+            'plugins/admin' => [
+                'file' => 'user/config/plugins/admin.yaml',
+                'modified' => 1468693558
             ],
             'plugins/advanced-pagecache' => [
                 'file' => 'user/config/plugins/advanced-pagecache.yaml',
@@ -73,25 +77,25 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1468531001
+                'modified' => 1468693530
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1468531001
+                'modified' => 1468693530
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1468531001
+                'modified' => 1468693530
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1468531001
+                'modified' => 1468693530
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1468605775
+                'modified' => 1468693553
             ],
             'plugins/advanced-pagecache' => [
                 'file' => 'user/plugins/advanced-pagecache/advanced-pagecache.yaml',
@@ -208,9 +212,9 @@ return [
                         1 => '/modular'
                     ],
                     'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
+                        'daily' => '30',
+                        'monthly' => '12',
+                        'visitors' => '20'
                     ]
                 ]
             ],
