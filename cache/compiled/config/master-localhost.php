@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1468693558,
-    'checksum' => '25371c26b770d036dc4151f52de291e2',
+    'timestamp' => 1468697466,
+    'checksum' => 'd338fc4d750dd792c31e37bd6b5d806e',
     'files' => [
         'user/config' => [
             'media' => [
@@ -67,7 +67,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1468688346
+                'modified' => 1468697466
             ],
             'themes/sean' => [
                 'file' => 'user/config/themes/sean.yaml',
