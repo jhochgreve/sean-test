@@ -1,0 +1,52 @@
+.tabs_labels
+  width: 100%
+  white-space: nowrap
+  overflow-x: auto
+  +margin(null 50px null 50px)
+  position: relative
+  z-index: 110
+  min-height: 106px
+  padding-top: 4vh
+  &::-webkit-scrollbar
+    display: none
+  +media($lg-1380)
+    +span-columns(14 of 14)
+    position: static
+    overflow: inherit
+  ul
+    li
+      display: inline-block
+      +padding(null 5% 4.6vh 5%)
+      white-space: nowrap
+      text-align: center
+      +media($lg-1200)
+        +padding(null 7.5% null 7.5%)
+        min-width: inherit
+      a
+        color: $color-black
+        text-decoration: none
+    li.active_tab
+      position: relative
+      box-shadow: 0px 5px 0px 0px rgba(0,0,0,1)
+.tab_content
+  +span-columns(14 of 14)
+  display: none
+  +media($lg-1380)
+    margin-top: 0
+.tab_filter_wrap
+  +span-columns(14 of 14)
+  +padding(4vh null 2vh null)
+  .tab_letters
+    +span-columns(14 of 14)
+    letter-spacing: .45em
+    +padding(4.5vh null 2.6vh null)
+    line-height: 2.2em
+    color: $text-grey
+    text-transform: uppercase
+    span
+      cursor: pointer
+    span.all
+      letter-spacing: normal
+    .active_letter
+      color: $color-black
+      font-weight: 700

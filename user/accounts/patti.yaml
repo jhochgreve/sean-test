@@ -1,0 +1,11 @@
+email: patti@perksonus.com
+fullname: 'Patti Mitrowski'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$7b7r83SAxDrP.cccP0OYde1I2eJTTQ.s0rxoBFZH0/xj2HOe2JkDS

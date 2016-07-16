@@ -1,0 +1,6 @@
+enabled: true
+show_all: false
+built_in_css: false
+include_home: false
+icon_divider_classes: 'fa fa-angle-right'
+link_trailing: false

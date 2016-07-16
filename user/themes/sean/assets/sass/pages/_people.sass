@@ -1,0 +1,64 @@
+#people
+  +main_container
+  overflow: hidden
+  .people_tabs
+    +span-columns(14 of 16)
+    +shift(1)
+    position: relative
+    min-height: 250px
+    .hr_line
+      +span-columns(14 of 14)
+      margin-top: -3px
+    .people_grid
+      +span-columns(14 of 14)
+      .grid_item_wrap
+        +span-columns(14 of 14)
+        position: relative
+        +omega()
+        +margin(null .33vw .66vh .33vw)
+        +media($sm-680)
+          +span-columns(7 of 14)
+          position: relative
+          +omega()
+          +margin(null .33vw .66vh 0px)
+        +media($lg-1380)
+          +span-columns(3.656 of 14)
+          +margin(null .21vw .58vh null)
+          &:nth-child(4n)
+            margin-right: 0
+        .person_image
+          +fill-parent
+          height: 50vh
+          max-height: 380px
+          min-height: 180px
+          background-color: $greyscale-dk
+        .person_info
+          +fill-parent
+          height: 25vh
+          background-color: #fff
+          max-height: 182px
+          min-height: 100px
+          +padding(3.2vh 1.3vw)
+          overflow: hidden
+          h2
+            font-size: em(24)
+            color: $color-black
+            font-weight: 500
+            letter-spacing: .02em
+            margin: 0
+          p
+            margin: 0
+            color: $text-grey
+          p.email
+            padding-top: 1.3vh
+            a
+              color: $text-grey
+              text-decoration: none
+          p.phone
+            padding-top: 1.3vh
+            white-space: nowrap
+            a
+              color: $text-grey
+              text-decoration: none
+              &:first-child
+                margin-right: 2vw

@@ -1,0 +1,23 @@
+{
+  "name": "traffic-static-starter",
+  "version": "0.0.0",
+  "authors": [
+    "Jacob Roman <jroman@trafficdigitalagency.com>",
+    ""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "modernizr-min": "^3.2.0",
+    "gsap": "GreenSock-JS#^1.18.2",
+    "bourbon": "^4.2.6",
+    "typi": "^2.0.0",
+    "normalize-css": "^3.0.3",
+    "neat": "^1.7.4"
+  }
+}

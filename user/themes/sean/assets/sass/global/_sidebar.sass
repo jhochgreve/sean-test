@@ -1,0 +1,179 @@
+.main_sidebar
+  +span-columns(16)
+  +omega()
+  position: fixed
+  z-index: 99999
+  font-family: $font-new-York
+  font-size: rem(16)
+  background-color: $main-blue
+  +clearfix
+  top: 0
+  #sidebar_logo
+    display: none
+  #mobile_logo
+    display: block
+    text-align: center
+    position: relative
+    img
+      height: 65px
+      margin-top: -30px
+  #mobile_menu_button
+    display: block
+    position: relative
+    z-index: 99999
+    top: 22px
+    left: 22px
+    width: 36px
+    &:hover
+      cursor: pointer
+  .sidebar_content
+    height: 100vh
+    text-transform: uppercase
+    text-align: left
+    .sidebar_nav
+      color: #fff
+      font-size: em(16)
+      font-weight: 400
+      ul:first-child.menu_out
+        transform: translateX(-100vw)
+        transform: translate3d(-100vw, 0, 0)
+      ul
+        list-style: none
+        padding-top: 40px
+        transform: translateX(0)
+        transform: translate3d(0, 0, 0)
+        transition: 300ms ease all
+        backface-visibility: hidden
+        li
+          +padding(13.5px null 13.5px null)
+          a
+            text-decoration: none
+            color: #fff
+            padding-left: 8vw
+          .menu-slideIn
+            display: none
+      .mobile_third
+        position: absolute
+        height: 100vh
+        width: 100%
+        display: block
+        top: 62px
+        right: -100vw
+        background-color: $main-blue
+        white-space: nowrap
+        transition: 300ms ease all
+        .menu-slideIn
+          font-size: em(11)
+          display: block
+          a
+            color: #fff
+          a.menu_back
+            cursor: pointer
+            display: block
+            padding-left: 4vw
+  .sidebar_briefcase
+    display: none
+    p
+      text-transform: uppercase
+  .sidebar_social
+    display: none
+  +media($md-768)
+    width: 240px
+    left: 0
+    top: 0
+    bottom: 0
+    float: left
+    clear: both
+    overflow-y: auto
+    +clearfix
+    position: fixed
+    z-index: 9999
+    #sidebar_logo
+      +fill-parent
+      text-align: center
+      display: block
+      img
+        width: 95%
+    #mobile_logo
+      display: none
+    #mobile_menu_button
+      display: none
+    .sidebar_content
+      +margin(10vh null null 28px)
+      padding-right: 7%
+      padding-left: 8%
+      text-transform: uppercase
+      text-align: left
+      height: auto
+      .sidebar_nav
+        color: #fff
+        font-size: em(16)
+        font-weight: 400
+        ul:first-child.menu_out
+          transform: translateX(0)
+          transform: translate3d(0, 0, 0)
+        ul
+          list-style: none
+          padding: 0
+          transition: inherit
+          li
+            position: relative
+            a
+              text-decoration: none
+              color: #fff
+              padding-left: 0
+            .sub-menu
+              font-size: em(13)
+              padding-left: 10%
+              height: inherit
+              a
+                color: $greyscale-hover
+        .mobile_third
+          display: none
+          .menu_back
+            display: none
+
+      .sidebar_nav > ul > li
+        &:nth-child(4)
+          padding-bottom: 20.25px
+          &::after
+            content: ''
+            display: block
+            width: 17%
+            position: absolute
+            bottom: 0
+            min-width: 27px
+            height: 1px
+            background-color: #fff
+        &:nth-child(5)
+          padding-top: 20.25px
+        &:nth-child(n+5)
+          a
+            color: $greyscale-hover
+            font-size: em(13)
+    .sidebar_briefcase
+      width: 100%
+      position: relative
+      bottom: -23vh
+      padding-left: 19%
+      font-size: em(13)
+      font-weight: 400
+      display: block
+      p
+        display: inline-block
+        padding-left: 10px
+    .sidebar_social
+      width: 100%
+      position: relative
+      bottom: -25vh
+      padding-left: 21%
+      display: block
+      &:last-child
+        margin-left: -10px !important
+      i
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+        a
+          color: transparent
+          text-decoration: none

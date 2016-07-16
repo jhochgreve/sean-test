@@ -1,0 +1,159 @@
+.news_grid
+  +fill-parent
+  +omega()
+  min-height: 73vh
+  a
+    text-decoration: none
+  h3
+    font-size: 16px
+    text-transform: uppercase
+    font-family: $font-Inconsolata
+    letter-spacing: 2px
+    margin: 0
+  p
+    font-size: em(20)
+    font-weight: 200
+    +margin(10px null 15px null)
+  .news_featured
+    +fill-parent
+    min-height: 76vh
+    max-height: 644px
+    overflow: hidden
+    +padding(51vh null null 3vw)
+    background-color: $greyscale-hover
+    color: #fff
+    p
+      font-size: em(30)
+    +media($lg-1200)
+      +span-columns(8 of 16, $display: block-collapse)
+    +media($lg-1380)
+      +padding(55vh null null 2.4%)
+    a
+      color: #fff
+      font-family: $font-Gibson
+      letter-spacing: 1px
+      font-size: em(13)
+      text-transform: uppercase
+      svg
+        margin-right: 5px
+        padding-top: 2px
+  .news_article_tease
+    +span-columns(7 of 8, block-collapse)
+    float: none
+  .other_featured
+    +fill-parent
+    min-height: 76vh
+    max-height: 644px
+    +media($lg-1200)
+      +span-columns(8 of 16)
+      +omega()
+    +media($lg-1680)
+      +span-columns(4 of 16, $display: block-collapse)
+    .featured_article
+      display: block
+      min-height: 38vh
+      max-height: 322px
+      overflow: hidden
+      +padding(6vh 8% null 8%)
+      background-color: $greyscale-dk
+      position: relative
+      svg
+        margin-right: 5px
+    .featured_blog
+      display: block
+      min-height: 38vh
+      max-height: 322px
+      overflow: hidden
+      +padding(6vh 8% null 8%)
+      background-color: $greyscale-lt
+      position: relative
+    .featured_blog, .featured_article
+      .read_more
+        position: absolute
+        bottom: 2.3vh
+        a
+          color: $color-black
+          font-family: $font-Gibson
+          letter-spacing: 1px
+          font-size: em(13)
+          text-transform: uppercase
+          svg
+            padding-top: 2px
+            margin-right: 5px
+  .latest_posts
+    +span-columns(16 of 16, $display: block-collapse)
+    background-color: #fff
+    +padding(1% 1% 1% 1%)
+    +media($lg-1130)
+      min-height: 35vh
+      max-height: 45vh
+    +media($lg-1680)
+      +span-columns(4 of 16, $display: block-collapse)
+      max-height: 76vh
+      position: relative
+    a
+      color: $color-black
+      text-decoration: none
+      font-family: $font-Gibson
+      font-size: em(13)
+      letter-spacing: 1px
+      text-transform: uppercase
+      svg
+        padding-top: 2px
+        margin-right: 5px
+    .latest_post_head
+      +span-columns(4 of 4)
+      max-height: 14.285%
+      padding-top: 4vh
+    .latest_post_foot
+      display: none
+      +media($lg-1680)
+        +span-columns(4 of 4)
+        max-height: 14.285%
+        font-size: em(13)
+        font-weight: 200
+        min-height: 7.5vh
+        position: absolute
+        z-index: 1100
+        bottom: 0
+        padding-top: 2.54vh
+        display: block
+        margin-left: -1%
+        background-color: #fff
+        box-shadow: 0px -6.5vh 5px 0px rgba(255,255,255,0.92)
+      a
+        font-size: 13px !important
+        svg
+          padding-top: 2px
+    .post_wrap
+      +fill-parent
+      +media($lg-1680)
+        max-height: 68vh
+        overflow: hidden
+        overflow-y: auto
+      ul
+        list-style: none
+        li.post_item
+          +span-columns(16 of 16)
+          border-bottom: solid $main-blue 1px
+          +media($lg-1130)
+            +span-columns(3.2 of 16)
+            border-bottom: none
+            border-right: solid $main-blue 1px
+          +media($lg-1680)
+            +span-columns(16 of 16)
+            min-height: 17.3vh
+            padding-top: .5vh
+            overflow: hidden
+            border-bottom: solid $main-blue 1px
+            border-right: none
+          p
+            font-size: em(18)
+            line-height: em(36)
+            +margin(0px null 0px null)
+          p.date
+            font-family: $font-Inconsolata
+            font-size: em(14)
+            font-weight: 200
+            color: #A5A9AC
+            +margin(0px null 0px null)

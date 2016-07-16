@@ -1,0 +1,51 @@
+form.tab_search
+  +span-columns(14 of 14)
+  position: relative
+  +media($lg-1380)
+    +span-columns(6 of 14)
+  input
+    +fill-parent
+    +padding(20px null 20px 5px)
+  .small_magnify
+    position: absolute
+    right: 20px
+    top: 22px
+form.tab_filters
+  +span-columns(14 of 14)
+  +omega()
+  position: relative
+  +media($lg-1380)
+    +span-columns(8 of 14)
+    +omega()
+  .filter_by
+    +span-columns(14 of 14)
+    +omega()
+    color: $text-grey
+    text-align: left
+    +media($md-768)
+      text-align: left
+      +span-columns(.955 of 8)
+      +omega()
+    +media($lg-1380)
+      text-align: right
+      +span-columns(2 of 8)
+  select
+    +span-columns(8 of 8)
+    +omega()
+    height: 63px
+    border-radius: 0px
+    border: $greyscale-dk 1px solid
+    background-color: #fff
+    color: #e2e2e2
+    +media($md-768)
+      +span-columns(2.573 of 8)
+      +omega()
+      margin-right: .49%
+    +media($lg-1380)
+      +span-columns(2.141 of 8)
+      +omega()
+      margin-right: .48%
+    option
+      height: 60px
+      border-radius: 0px
+      background-color: #fff

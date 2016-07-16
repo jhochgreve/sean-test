@@ -1,0 +1,33 @@
+{
+  "name": "start-projects-static",
+  "version": "1.0.0",
+  "description": "Traffic Starter Static Kit",
+  "main": "gulpfile.js",
+  "engines": {
+    "node": "4.1.1"
+  },
+  "dependencies": {
+    "devbridge-styleguide": "^0.4.9"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "devbridge-styleguide": "^0.4.9",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-kraken": "^0.1.0",
+    "gulp-nunjucks": "^2.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.1",
+    "sass-lint": "^1.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Hochgreve",
+  "license": "MIT"
+}

@@ -1,0 +1,55 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+<section class="hero">
+  <div class="content_top">
+    {% for feature in page.header.homeHeroList %}
+      <p>{{ feature.subtitle }}</p>
+      <h1>{{ feature.title }}</h1>
+    {% endfor %}
+  </div>
+  <div class="lite_overlay"></div>
+</section>
+<section class="sub_head">
+  {% for feature in page.header.subheadingList %}
+    <h3>{{ feature.copy }}</h3>
+  {% endfor %}
+</section>
+<section class="sub_hero">
+  <div class="content_top">
+    <p class="featured">Featured Loan / Program</p>
+    {% for feature in page.header.featuredService %}
+    <h2>{{ feature.title }}</h2>
+    <article class="sub_hero_article">
+      <p>{{ feature.copy }}</p>
+    </article>
+    <div class="sub_hero_cta_wrap">
+      <a href="{{ feature.buttonLink }}" class="sub_hero_cta">{{ feature.buttonText }}</a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="overlay_dark"></div>
+</section>
+<section class="category_grid">
+  {% for feature in page.header.serviceList %}
+    <div class="category_grid_item" style="background-image: url('{{ feature.serviceImage }}')">
+      <div class="content_top">
+        <div class="title_wrap">
+          <h3>{{ feature.serviceTitle }}</h3>
+        </div>
+        <div class="learn_more_contain">
+          <a href="{{ feature.serviceLinkURL }}" class="learn_more"><svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="TEST" transform="translate(-3.000000, -314.000000)" fill="#A5A9AC">
+                      <path d="M18.75,319.8945 C18.75,319.7465 18.719,319.5995 18.662,319.4605 C18.65,319.4325 18.627,319.4135 18.613,319.3865 C18.561,319.2845 18.507,319.1835 18.422,319.0985 C18.42,319.0955 18.416,319.0955 18.414,319.0925 L13.649,314.3285 C13.212,313.8905 12.495,313.8905 12.058,314.3285 L12.058,314.3285 C11.62,314.7655 11.62,315.4815 12.058,315.9195 L14.909,318.7705 L4.125,318.7705 C3.506,318.7705 3,319.2765 3,319.8955 C3,320.5135 3.506,321.0205 4.125,321.0205 L14.909,321.0205 L12.058,323.8715 C11.62,324.3085 11.62,325.0245 12.058,325.4625 C12.495,325.8995 13.212,325.8995 13.649,325.4625 L18.414,320.6975 C18.416,320.6955 18.42,320.6945 18.422,320.6925 C18.507,320.6075 18.561,320.5055 18.613,320.4035 C18.627,320.3775 18.65,320.3575 18.662,320.3295 C18.719,320.1915 18.75,320.0435 18.75,319.8955 L18.75,319.8955 L18.75,319.8945" id="Fill-1-Copy-5"></path>
+                  </g>
+              </g>
+          </svg>&nbsp;{{ feature.serviceLink }}</a>
+        </div>
+      </div>
+      <div class="overlay_dark"></div>
+    </div>
+    {% endfor %}
+  </section>
+    {% include 'partials/blogmodule.html.twig' %}
+    {% include 'partials/footer.html.twig' %}
+{% endblock %}
