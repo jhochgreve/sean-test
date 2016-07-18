@@ -42,3 +42,30 @@
           transition: all ease 300ms
           &:hover
             background-color: #fff
+  .category_bar_contain
+    +span-columns(16 of 16)
+    height: 13vh
+    background-color: #fff
+    border-top: solid 1px $main-blue
+    border-bottom: solid 1px $main-blue
+    .category_wrap
+      +span-columns(12 of 16)
+      +shift(2)
+      height: 100%
+      position: relative
+      overflow-x: auto
+      ul
+        position: relative
+        top: 4.6vh
+        list-style: none
+        white-space: nowrap
+        +fill-parent
+        li
+          font-family: $font-new-York
+          font-size: calc(14px + .6vw)
+          color: $main-blue
+          display: inline-block
+          white-space: nowrap
+          overflow-x: visible
+          +padding(null 2vw null 2vw)
+          cursor: pointer
