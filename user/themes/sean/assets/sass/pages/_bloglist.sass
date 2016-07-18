@@ -27,16 +27,18 @@
           font-size: calc(16px + .6vw)
           font-family: $font-Inconsolata
           color: $main-blue
-          margin-bottom: 15px
+          +margin(10vh null 3.5vh null)
       .header_text
         +span-columns(14 of 16)
         +shift(1)
         h2
           font-family: $font-new-York
-          font-size: calc(21px + 1.2vw)
+          font-size: calc(25px + 2vw)
           color: $main-blue
+          +margin(1.5vh null 1vh null)
         p
           font-size: calc(16px + .7vw)
+          +margin(0 null 5vh null)
         .small_button
           background-color: rgba(255, 255, 255, 0.8)
           transition: all ease 300ms
