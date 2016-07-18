@@ -3,33 +3,35 @@
 	{% set collection = page.collection() %}
 
 	{% block content %}
-		{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
-
-		{% if blog_image %}
-		<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
-		{% else %}
-		<div class="blog-header">
-		{% endif %}
-			{{ page.content }}
+		<section class="blog_header">
+			<div class="header_text_wrap">
+				<div class="blog_title">
+					<h1>Latest Mortgage Insights</h1>
+					<div class="underline_center"></div>
+				</div>
+				<div class="header_text">
+					<h2>Insight title goes right here.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum varius odio ut fringilla. Morbi lacinia dapibus magna nec gravida. Sed et ligula quis elit aliquet condimentum vel varius massa.</p>
+					<a class="small_button" href="javascript:void(0)">Read Full Article</a>
+				</div>
+			</div>
+			<div class="overlay_lite"></div>
+		</section>
+		<div class="category_bar_contain">
+			<!--ToDo: Add horizontal, scrollable category section here-->
+			<div class="category_wrap">
+				<ul>
+					<li class="active" id="cat_all">All Posts</li>
+					<li id="cat_name2">Topic 1</li>
+					<li id="cat_name3">Topic 2</li>
+					<li id="cat_name4">Topic 3</li>
+					<li id="cat_name5">Topic 4</li>
+					<li id="cat_name6">Topic 5</li>
+				</ul>
+			</div>
 		</div>
-
-			{% if config.plugins.breadcrumbs.enabled %}
-				{% include 'partials/breadcrumbs.html.twig' %}
-			{% endif %}
-
-		<div class="content-wrapper blog-content-list grid pure-g">
-			<div id="listing" class="block pure-u-2-3 h-feed">
-				{% for child in collection %}
-			        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
-			    {% endfor %}
-
-                {% if config.plugins.pagination.enabled and collection.params.pagination %}
-                    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
-                {% endif %}
-			</div>
-			<div id="sidebar" class="block size-1-3 pure-u-1-3">
-				{% include 'partials/sidebar.html.twig' with {'blog':page} %}
-			</div>
+		<div class="blog_grid_contain">
+			<!--ToDo: Add a 3X blog post card grid based on exsisting bourbon columns that is the containers for the categories above-->
 		</div>
     {% include 'partials/footer.html.twig' %}
 	{% endblock %}
