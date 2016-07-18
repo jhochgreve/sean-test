@@ -71,3 +71,27 @@
           overflow-x: visible
           +padding(null 2vw null 2vw)
           cursor: pointer
+  .filter_contain
+    +span-columns(14 of 16)
+    +shift(1)
+    +padding(2vh null 2vh null)
+    input[type="search"]
+      +span-columns(5 of 14)
+      +padding(1.5vh null 1.5vh 5px)
+      font-family: $font-Paris-Sixty
+      font-weight: 100
+  .blog_grid_contain
+    +span-columns(14 of 16)
+    +shift(1)
+    +padding(2vh null 2vh null)
+    .blog_item
+      +span-columns(4.666 of 14)
+      +omega(3n)
+      border: solid 1px $main-blue
+      margin-bottom: 2.8vh
+      .top_img
+        img
+          width: 100%
+      .item_text
+        +padding (2vh 1vw 2vh 1vw)
+        text-align: center

@@ -19,8 +19,9 @@
 
         {% block stylesheets %}
             {# core CSS #}
-            {% do assets.add('theme://css/styles.css',100) %}
-
+            {% do assets.add('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css>
+', 100) %}
+            {% do assets.add('theme://css/styles.css',101) %}
             {{ assets.css() }}
         {% endblock %}
         {% block javascripts %}

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1468697469,
-    'checksum' => 'f762c8878b400371443ff4227b012ae0',
+    'timestamp' => 1468857022,
+    'checksum' => '85fb2f62ecc7ee1c8ec313cd1926000c',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -100,10 +100,6 @@ return [
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/blueprints.yaml',
                 'modified' => 1468606312
-            ],
-            'plugins/smartypants' => [
-                'file' => 'user/plugins/smartypants/blueprints.yaml',
-                'modified' => 1468606133
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/blueprints.yaml',
@@ -3399,123 +3395,6 @@ return [
                 'name' => 'plugins.simplesearch.order.dir',
                 'validation' => 'strict'
             ],
-            'plugins.smartypants' => [
-                'form' => [
-                    'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
-            ],
-            'plugins.smartypants.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin status',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.smartypants.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.enabled_in_admin' => [
-                'type' => 'toggle',
-                'label' => 'Enable in admin',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.smartypants.enabled_in_admin',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.twig_filter' => [
-                'type' => 'toggle',
-                'label' => 'Twig filter',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.smartypants.twig_filter',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.process_title' => [
-                'type' => 'toggle',
-                'label' => 'Process titles',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.smartypants.process_title',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.process_content' => [
-                'type' => 'toggle',
-                'label' => 'Process content',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.smartypants.process_content',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.options' => [
-                'type' => 'text',
-                'label' => 'Options',
-                'size' => 'large',
-                'name' => 'plugins.smartypants.options',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.dq_open' => [
-                'type' => 'text',
-                'label' => 'Double quote open',
-                'size' => 'small',
-                'name' => 'plugins.smartypants.dq_open',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.dq_close' => [
-                'type' => 'text',
-                'label' => 'Double quote close',
-                'size' => 'small',
-                'name' => 'plugins.smartypants.dq_close',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.sq_open' => [
-                'type' => 'text',
-                'label' => 'Single quote open',
-                'size' => 'small',
-                'name' => 'plugins.smartypants.sq_open',
-                'validation' => 'strict'
-            ],
-            'plugins.smartypants.sq_close' => [
-                'type' => 'text',
-                'label' => 'Single quote close / apostrophe',
-                'size' => 'small',
-                'name' => 'plugins.smartypants.sq_close',
-                'validation' => 'strict'
-            ],
             'plugins.taxonomylist' => [
                 'form' => [
                     'validation' => 'strict'
@@ -3965,18 +3844,6 @@ return [
                         'by' => 'plugins.simplesearch.order.by',
                         'dir' => 'plugins.simplesearch.order.dir'
                     ]
-                ],
-                'smartypants' => [
-                    'enabled' => 'plugins.smartypants.enabled',
-                    'enabled_in_admin' => 'plugins.smartypants.enabled_in_admin',
-                    'twig_filter' => 'plugins.smartypants.twig_filter',
-                    'process_title' => 'plugins.smartypants.process_title',
-                    'process_content' => 'plugins.smartypants.process_content',
-                    'options' => 'plugins.smartypants.options',
-                    'dq_open' => 'plugins.smartypants.dq_open',
-                    'dq_close' => 'plugins.smartypants.dq_close',
-                    'sq_open' => 'plugins.smartypants.sq_open',
-                    'sq_close' => 'plugins.smartypants.sq_close'
                 ],
                 'taxonomylist' => [
                     'enabled' => 'plugins.taxonomylist.enabled',

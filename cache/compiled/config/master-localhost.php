@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1468697466,
-    'checksum' => 'd338fc4d750dd792c31e37bd6b5d806e',
+    'timestamp' => 1468868174,
+    'checksum' => 'd989f33c1ead0f16ebee1e63e782cd11',
     'files' => [
         'user/config' => [
             'media' => [
@@ -43,11 +43,11 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/config/plugins/simplesearch.yaml',
-                'modified' => 1468608852
+                'modified' => 1468857255
             ],
             'plugins/smartypants' => [
                 'file' => 'user/config/plugins/smartypants.yaml',
-                'modified' => 1468606150
+                'modified' => 1468856956
             ],
             'plugins/twigcache' => [
                 'file' => 'user/config/plugins/twigcache.yaml',
@@ -67,7 +67,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1468697466
+                'modified' => 1468868174
             ],
             'themes/sean' => [
                 'file' => 'user/config/themes/sean.yaml',
@@ -164,10 +164,6 @@ return [
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
                 'modified' => 1468606312
-            ],
-            'plugins/smartypants' => [
-                'file' => 'user/plugins/smartypants/smartypants.yaml',
-                'modified' => 1468606133
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
@@ -426,7 +422,7 @@ return [
             ],
             'simplesearch' => [
                 'enabled' => true,
-                'built_in_css' => true,
+                'built_in_css' => false,
                 'display_button' => false,
                 'min_query_length' => 3,
                 'route' => '/search',
@@ -442,14 +438,6 @@ return [
                     'dir' => 'desc'
                 ]
             ],
-            'smartypants' => [
-                'enabled' => true,
-                'twig_filter' => true,
-                'enabled_in_admin' => true,
-                'process_title' => true,
-                'process_content' => true,
-                'options' => 'qDew'
-            ],
             'taxonomylist' => [
                 'enabled' => true,
                 'route' => '/blog'
@@ -462,6 +450,14 @@ return [
                 'framework' => 'pure',
                 'add_default_css' => true,
                 'add_framework_assets' => true
+            ],
+            'smartypants' => [
+                'enabled' => false,
+                'twig_filter' => true,
+                'enabled_in_admin' => true,
+                'process_title' => true,
+                'process_content' => true,
+                'options' => 'qDew'
             ]
         ],
         'media' => [
