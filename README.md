@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ![](https://avatars1.githubusercontent.com/u/8237355?v=2&s=50) Grav
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/cfd20465-d0f8-4a0a-8444-467f5b5f16ad/mini.png)](https://insight.sensiolabs.com/projects/cfd20465-d0f8-4a0a-8444-467f5b5f16ad) [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/getgrav/grav?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/getgrav/grav.svg?branch=develop)](https://travis-ci.org/getgrav/grav)
@@ -123,3 +124,6 @@ First install the dev dependencies by running `composer update` from the Grav ro
 Then `composer test` will run the Unit Tests, which should be always executed successfully on any site.
 
 You can also run a single unit test file, e.g. `composer test tests/unit/Grav/Common/AssetsTest.php`
+=======
+# sean-test
+>>>>>>> feba94ae70cbf5451ae810601ad00dea984708f5
